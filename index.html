@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Rip-Robot</title>
-	<link rel="stylesheet" href="animate.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
-<h1 class="animate__animated animate__infinite animate__bounce">Rip-Robo</h1>
-	<div class="robots">
-		<div class="android"> 
-			<div class="head animate__animated animate__bounce"> 
-				<div class="eyes"> 
-					<div class="left_eye"></div> 
-					<div class="right_eye"></div>
-				</div> 
-			</div> 
-			<div class="upper_body"> 
-				<div class="left_arm"></div> 
-				<div class="torso animate__animated animate__swing"></div> 
-				<div class="right_arm"></div>
-			</div> 
-			<div class="chair">
-			<div class="lower_body"> 
-				<div class="left_leg"></div> 
-				<div class="right_leg"></div> 
-			</div> 
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div id="game-over-overlay">
+    </div>
+
+    <div id="game-over">
+      <h1>GAME OVER</h1>
+      <button id="play-again">Play Again</button>
+    </div>
+
+    <div class="wrapper">
+      <div id="instructions">
+        <div>
+          move with <span class="key">arrows</span> or <span class="key">wasd</span>
+        </div>
+        <div>
+          shoot with <span class="key">space</span>
+        </div>
+      </div>
+
+      <div id="score"></div>
+    </div>
+
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/sprite.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>
